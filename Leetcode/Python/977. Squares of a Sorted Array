@@ -1,0 +1,12 @@
+class Solution(object):
+    def sortedSquares(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        new_nums = []
+        for i in nums:
+            value = i * i
+            new_nums.append(value)
+        new_nums.sort()
+        return new_nums
